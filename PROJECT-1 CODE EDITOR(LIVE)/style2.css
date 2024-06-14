@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background-color:#d8e2dc ; */
+}
+
+.container1 {
+    height: 50vh;
+    width: 100%;
+    /* border: 2px solid red; */
+    padding: 5px 5px 5px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9d8189;
+}
+
+.container2 {
+    height: 49vh;
+    width: 100%;
+    /* border: 2px solid red; */
+    padding: 5px 5px 5px 5px;
+    margin-top: 5px;
+}
+
+.html,
+.css,
+.js {
+    height: 100%;
+    width: 38vw;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #d8e2dc;
+}
+
+.output {
+    height: 100%;
+    width: 98vw;
+    padding: 5px 5px 5px 5px;
+    background-color: #ffe5d9;
+}
+
+textarea {
+    height: 85%;
+    width: 60vh;
+    outline: 0;
+    background-color: #ffcad4;
+    font-size: 16px;
+    clear: left;
+}
+
+.onebox {
+    height: 100%;
+    /* display: flex; */
+    margin-right: 10px;
+    margin-left: 48px;
+}
+
+label {
+    background-color: #d8e2dc;
+    font-size: 20px;
+    width: 100%;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+i {
+    margin-right: 20px;
+    cursor: pointer;
+
+}
+
+iframe {
+    width: 100%;
+    background-color: antiquewhite;
+    height: 43vh;
+    outline: 0;
+    padding: 5px 5px 5px 5px;
+    border: 0;
+}
