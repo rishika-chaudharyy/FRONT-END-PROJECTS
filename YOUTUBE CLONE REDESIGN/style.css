@@ -471,7 +471,7 @@ a {
     width: 40px;
     border-radius: 50%;
     margin-right: 15px;
-    height:40px;
+    height: 40px;
 }
 
 .publisher div p {
@@ -542,7 +542,7 @@ a {
 
 .old-comment img {
     width: 35px;
-    height:35px;
+    height: 35px;
     border-radius: 50%;
     margin-right: 15px;
 }
@@ -569,7 +569,7 @@ a {
 .old-comment .comment-action img {
     border-radius: 0;
     width: 20px;
-    height:20px;
+    height: 20px;
     margin-right: 5px;
 }
 
@@ -584,6 +584,80 @@ a {
 }
 
 @media (max-width:900px) {
+    .play-video {
+        flex-basis: 100%;
+    }
+
+    .right-sidebar {
+        flex-basis: 100%;
+    }
+
+    .play-container {
+        padding-left: 5%;
+    }
+
+    .video-description {
+        padding-left: 0;
+    }
+
+    .play-video .play-video-info a {
+        margin-left: 0;
+        margin-right: 15px;
+        margin-top: 15px;
+    }
+}
+
+/* MEDIA QUERIES -RESPONSIVE */
+@media (max-width: 1024px) {
+    .side-bar {
+        width: 25%;
+        padding-top: 60px;
+    }
+
+    .list-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-column-gap: 10px;
+        grid-row-gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .left-nav .logo {
+        width: 100px;
+    }
+
+    .left-nav .menu {
+        margin-right: 15px;
+    }
+
+    .middle-nav .search-bar {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .middle-nav .search-bar input {
+        width: calc(100% - 50px);
+    }
+
+    .mic {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .side-bar {
+        display: none;
+        /* Example of hiding sidebar on very small screens */
+    }
+
+    .container .banner img {
+        height: auto;
+    }
+}
+
+@media (max-width: 900px) {
     .play-video {
         flex-basis: 100%;
     }
