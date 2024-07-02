@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body class="resume-body">
+
+    <!-- HEADER AND NAVBAR  -->
+    <nav>
+        <div class="container">
+
+            <div class="left">
+                <i class="fa-solid fa-clipboard"></i>
+                <p>Resume <span>Builder</span></p>
+            </div>
+
+            <div class="right">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- ABOUT SECTION -->
+    <div class="about">
+
+        <div class="about-line">
+            <p>About section</p>
+        </div>
+
+        <div class="about-info">
+            <div class="first-name">
+                <p>First name</p>
+                <input type="text" spellcheck="false">
+            </div>
+
+            <div class="middle-name">
+                <p>Middle name</p>
+                <input type="text" spellcheck="false">
+            </div>
+
+            <div class="last-name">
+                <p>Last name</p>
+                <input type="text" spellcheck="false">
+            </div>
+
+            <div class="person-image">
+                <p>Your image</p>
+                <input type="file" spellcheck="false">
+            </div>
+
+            <div class="designation">
+                <p>Designation</p>
+                <input type="text" placeholder="eg. Senior accountant" spellcheck="false">
+            </div>
+
+            <div class="address">
+                <p>Address</p>
+                <input type="text" placeholder="eg. Nikol odhav" spellcheck="false">
+            </div>
+
+            <div class="email">
+                <p>Email</p>
+                <input type="email" placeholder="eg. rishika@gmail.com" spellcheck="false">
+            </div>
+
+            <div class="number">
+                <p>Phone number</p>
+                <input type="tel" placeholder="eg. 8200427330" spellcheck="false">
+            </div>
+
+            <div class="summary">
+                <p>Summary</p>
+                <input type="text" spellcheck="false">
+            </div>
+        </div>
+    </div>
+
+    <!-- ACHIEVEMENTS SECTION-->
+    <div class="achievements">
+        <div class="achievement-line">
+            <p>Achievements section</p>
+        </div>
+
+        <div class="achievements-info">
+            <div class="title">
+                <p>Title</p>
+                <input type="text">
+            </div>
+
+            <div class="description">
+                <p>Description</p>
+                <input type="text">
+            </div>
+        </div>
+    </div>
+
+    <div class="plus">
+        <i class="fa-solid fa-plus" id="addAchievementBtn"></i>
+    </div>
+
+    <!-- EXPERIENCE SECTION -->
+    <div class="experience">
+
+        <div class="experience-line">
+            <p>Experience section</p>
+        </div>
+
+        <div class="experience-info">
+            <div class="title">
+                <p>Title</p>
+                <input type="text" spellcheck="false">
+            </div>
+
+            <div class="company">
+                <p>Company/Organisation</p>
+                <input type="text" spellcheck="false">
+            </div>
+
+            <div class="location">
+                <p>Location</p>
+                <input type="text" spellcheck="false">
+            </div>
+
+            <div class="start-date">
+                <p>Start Date</p>
+                <input type="date" spellcheck="false">
+            </div>
+
+            <div class="end-date">
+                <p>End Date</p>
+                <input type="date" spellcheck="false">
+            </div>
+
+            <div class="description">
+                <p>Description</p>
+                <input type="text" spellcheck="false">
+            </div>
+        </div>
+    </div>
+
+    <div class="plus">
+        <i class="fa-solid fa-plus" id="addExperienceBtn"></i>
+    </div>
+
+    <!-- EDUCATION SECTION -->
+    <div class="education">
+
+        <div class="education-line">
+            <p>Education section</p>
+        </div>
+
+        <div class="education-info">
+            <div class="school">
+                <p>School</p>
+                <input type="text" spellcheck="false">
+            </div>
+
+            <div class="degree">
+                <p>Degree</p>
+                <input type="text" spellcheck="false">
+            </div>
+
+            <div class="city">
+                <p>City</p>
+                <input type="text" spellcheck="false">
+            </div>
+
+            <div class="start-date">
+                <p>Start Date</p>
+                <input type="date" spellcheck="false">
+            </div>
+
+            <div class="end-date">
+                <p>End Date</p>
+                <input type="date" spellcheck="false">
+            </div>
+
+            <div class="description">
+                <p>Description</p>
+                <input type="text" spellcheck="false">
+            </div>
+        </div>
+    </div>
+
+    <div class="plus">
+        <i class="fa-solid fa-plus" id="addEducationBtn"></i>
+    </div>
+
+    <!-- PROJECT ACHIEVEMENTS -->
+    <div class="projects">
+        <div class="project-line">
+            <p>Projects Section</p>
+        </div>
+
+        <div class="projects-info">
+            <div class="title">
+                <p>Project</p>
+                <input type="text">
+            </div>
+
+            <div class="description">
+                <p>Project_link</p>
+                <input type="text">
+            </div>
+        </div>
+    </div>
+
+    <div class="plus">
+        <i class="fa-solid fa-plus" id="#addProjectBtn"></i>
+    </div>
+
+    <!-- SKILLS SECTION  -->
+    <div class="skills">
+        <div class="skills-line">
+            <p>Skills section</p>
+        </div>
+
+        <div class="skills-info">
+            <div class="skill">
+                <p>Skills</p>
+                <input type="text" spellcheck="false">
+            </div>
+        </div>
+    </div>
+
+    <div class="plus">
+        <i class="fa-solid fa-plus" id="#addProjectBtn"></i>
+    </div>
+
+    <button class="btn">Download CV</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

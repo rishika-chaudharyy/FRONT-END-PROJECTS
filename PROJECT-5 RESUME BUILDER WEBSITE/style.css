@@ -1,0 +1,611 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    outline: 0;
+    border: 0;
+    text-decoration: none;
+    cursor: default;
+}
+
+body {
+    background-color: beige;
+}
+
+/* NAVBAR STYLING */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 10vh;
+    background-color: white;
+}
+
+.container .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.container i {
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.container p {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.container p span {
+    color: blue;
+}
+
+/* MAIN STYLING */
+
+main {
+    margin-top: 3rem;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 3%;
+}
+
+main .content p {
+    font-size: 1.3rem;
+    color: black;
+    font-weight: 400;
+}
+
+main .content h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 1rem;
+}
+
+main .content span {
+    color: blue;
+    font-weight: 600;
+}
+
+.create-resume-button {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    padding: 1% 1%;
+    background-color: blue;
+    color: white;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.create-resume-button:hover {
+    background-color: beige;
+    color: black;
+}
+
+.resume-images {
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.resume-images img {
+    width: 14rem;
+    height: 20rem;
+    margin: 0 2rem;
+}
+
+/* SECOND PAGE STYLING */
+
+.second-page {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    background-color: #fff;
+}
+
+.second-page .second-content {
+    text-align: center;
+    padding: 0 2%;
+}
+
+.second-page .second-content p {
+    font-size: 1.4rem;
+}
+
+.second-page .second-content h1 {
+    color: blue;
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+}
+
+.buttons button {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    padding: 1% 1%;
+    background-color: blue;
+    color: white;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: .5s ease;
+    margin-right: 1rem;
+}
+
+.buttons .effect:hover {
+    color: black;
+    background-color: white;
+}
+
+.second-img img {
+    padding: 0 2%;
+}
+
+/* THIRD PAGE STYLING */
+.third-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(228, 225, 225);
+    padding: 0 5%;
+    padding-top: 2rem;
+}
+
+.third-page .left {
+    width: 25%;
+    text-align: center;
+}
+
+.third-page .right {
+    width: 25%;
+    text-align: center;
+}
+
+.third-page .middle {
+    width: 25%;
+    text-align: center;
+}
+
+.third-page .left img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.third-page .right img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.third-page .middle img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.third-page .left h4 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.third-page .right h4 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.third-page .middle h4 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.third-page .left p {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+    color: black;
+    font-weight: 400;
+}
+
+.third-page .right p {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+    color: black;
+    font-weight: 400;
+}
+
+.third-page .middle p {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+    color: black;
+    font-weight: 400;
+}
+
+/* FOOTER STYLING */
+.footer {
+    height: 10vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(92, 92, 92);
+}
+
+.footer p {
+    color: white;
+    font-size: 1.3rem;
+}
+
+/* ABOUT SECTION STYLING */
+
+.about {
+    margin-top: 7rem;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.about .about-line {
+    width: 100%;
+    background: rgb(13, 13, 14);
+    height: 5vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .about-line p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.about-info {
+    margin-top: 1rem;
+    width: 100%;
+    height: 40vh;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem 2rem;
+    padding-left: 3rem;
+    column-gap: 3.5rem;
+    background-color: rgb(223, 222, 222);
+}
+
+.about-info p {
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.about-info input {
+    width: 15rem;
+    height: 2.5rem;
+    cursor: text;
+    padding: 1rem;
+    font-size: 1.3rem;
+    border: 1px solid black;
+}
+
+.person-image input {
+    background-color: white;
+    font-size: 0.8rem;
+    padding-bottom: 2px;
+}
+
+
+.resume-body {
+    background-color: #e2dddd;
+}
+
+/* ACHIEVEMENTS SECTION STYLING */
+.achievements {
+    margin-top: 2rem;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.achievements .achievement-line {
+    width: 100%;
+    background: rgb(13, 13, 14);
+    height: 5vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.achievements .achievement-line p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.achievements-info {
+    margin-top: 1rem;
+    width: 100%;
+    height: 15vh;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem 2rem;
+    padding-left: 3rem;
+    column-gap: 3.5rem;
+    background-color: rgb(223, 222, 222);
+}
+
+.achievements-info p {
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.achievements-info input {
+    width: 22rem;
+    height: 2rem;
+    cursor: text;
+    padding: 1rem;
+    font-size: 1.3rem;
+    border: 1px solid black;
+}
+
+.plus {
+    width: 2rem;
+    height: 2rem;
+    background-color: rgb(117, 117, 119);
+    margin-top: 0.3rem;
+    margin-left: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.plus i {
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* EXPERIENCE SECTION STYLING */
+.experience {
+    margin-top: 2rem;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.experience .experience-line {
+    width: 100%;
+    background: rgb(13, 13, 14);
+    height: 5vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.experience .experience-line p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.experience-info {
+    margin-top: 1rem;
+    width: 100%;
+    height: 30vh;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem 2rem;
+    padding-left: 3rem;
+    column-gap: 3.5rem;
+    background-color: rgb(223, 222, 222);
+}
+
+.experience-info p {
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.experience-info input {
+    width: 15rem;
+    height: 2.5rem;
+    cursor: text;
+    padding: 1rem;
+    font-size: 1.3rem;
+    border: 1px solid black;
+}
+
+
+/* EDUCATION SECTION STYLING */
+
+.education {
+    margin-top: 2rem;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.education .education-line {
+    width: 100%;
+    background: rgb(13, 13, 14);
+    height: 5vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.education .education-line p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.education-info {
+    margin-top: 1rem;
+    width: 100%;
+    height: 30vh;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem 2rem;
+    padding-left: 3rem;
+    column-gap: 3.5rem;
+    background-color: rgb(223, 222, 222);
+}
+
+.education-info p {
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.education-info input {
+    width: 15rem;
+    height: 2.5rem;
+    cursor: text;
+    padding: 1rem;
+    font-size: 1.3rem;
+    border: 1px solid black;
+}
+
+/* PROJECT SECTION STYLING */
+.projects {
+    margin-top: 2rem;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.projects .project-line {
+    width: 100%;
+    background: rgb(13, 13, 14);
+    height: 5vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects .project-line p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.projects-info {
+    margin-top: 1rem;
+    width: 100%;
+    height: 15vh;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem 2rem;
+    padding-left: 3rem;
+    column-gap: 3.5rem;
+    background-color: rgb(223, 222, 222);
+}
+
+.projects-info p {
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.projects-info input {
+    width: 22rem;
+    height: 2rem;
+    cursor: text;
+    padding: 1rem;
+    font-size: 1.3rem;
+    border: 1px solid black;
+}
+
+/* SKILLS SECTION STYLING */
+.skills {
+    margin-top: 2rem;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.skills .skills-line {
+    width: 100%;
+    background: rgb(13, 13, 14);
+    height: 5vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills .skills-line p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.skills-info {
+    margin-top: 1rem;
+    width: 100%;
+    height: 18vh;
+    border: 1px solid black;
+    padding: 1rem 2rem;
+    padding-left: 3rem;
+    column-gap: 3.5rem;
+    background-color: rgb(223, 222, 222);
+}
+
+.skills-info p {
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.skills-info input {
+    width: 60rem;
+    height: 1.7rem;
+    cursor: text;
+    padding: 1rem;
+    font-size: 1.3rem;
+    border: 1px solid black;
+}
+
+.btn {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    padding: 1% 1%;
+    background-color: blue;
+    color: white;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: .5s ease;
+    margin-right: 1rem;
+    margin-left: 15%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.btn:hover {
+    color: black;
+    background-color: #e2dddd;
+}
